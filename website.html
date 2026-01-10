@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Paket Hosting & Domain</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #0f172a;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #cbd5f5;
+        margin-bottom: 40px;
+    }
+
+    .pricing {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #111827;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .card h3 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    ul li::before {
+        content: "✔ ";
+        color: #22c55e;
+    }
+
+    .highlight {
+        color: #facc15;
+        font-weight: bold;
+    }
+
+    .period {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 5px;
+    }
+
+    .switch {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .segment, .requirements, .guarantee {
+        margin-top: 60px;
+        background: #020617;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .segment ul li::before {
+        content: "• ";
+        color: #38bdf8;
+    }
+
+    .guarantee ul li::before {
+        content: "✔ ";
+        color: #22c55e;
+    }
+
+    .wa-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(37,211,102,0.5);
+      z-index: 2000;
+      animation: waPulse 2s infinite;
+    }
+
+    .wa-float svg {
+      width: 32px;
+      height: 32px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Paket Website</h1>
+<p class="subtitle">Solusi hosting untuk bisnis, koperasi, sekolah, dan organisasi</p>
+
+<div class="pricing">
+
+    <!-- Unlimited M -->
+    <div class="card">
+        <h3>Unlimited M</h3>
+        <ul>
+            <li>Unlimited space ✨</li>
+            <li>Unlimited traffic</li>
+            <li>Unlimited email</li>
+            <li class="highlight">Unlimited domains ✨</li>
+            <li>Free SitePro Website Builder</li>
+            <li>Free SSL (Let's Encrypt)</li>
+            <li>Medium Cloud Resource</li>
+            <li>Turbo Booster <span class="highlight">(included)</span></li>
+            <li>MonarX Security <span class="highlight">(included)</span></li>
+            <li>Akses SSH, Node.js, Python, Redis</li>
+            <li>Object Cache, PHP X-Ray, AccelerateWP</li>
+
+            <!-- NEW -->
+            <li class="highlight">Garansi Maintenance Bug Minor 3 Bulan</li>
+        </ul>
+
+        <div class="period">
+            Periode:
+            <select>
+                <option>1 Tahun</option>
+                <option>2 Tahun</option>
+                <option>3 Tahun</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Unlimited S -->
+    <div class="card">
+        <h3>Unlimited S</h3>
+        <ul>
+            <li>Unlimited space ✨</li>
+            <li>Unlimited traffic</li>
+            <li>Unlimited email</li>
+            <li>6 domains</li>
+            <li>Free SitePro Website Builder</li>
+            <li>Free SSL (Let's Encrypt)</li>
+            <li>Small Cloud Resource</li>
+            <li>Turbo Booster (optional)</li>
+            <li>Security 360 <span class="highlight">(included)</span></li>
+            <li>Akses SSH, Node.js, Python, Redis</li>
+            <li>Object Cache, PHP X-Ray, AccelerateWP</li>
+
+            <!-- NEW -->
+            <li class="highlight">Garansi Maintenance Bug Minor 3 Bulan</li>
+        </ul>
+
+        <div class="period">
+            Periode:
+            <select>
+                <option>1 Tahun</option>
+                <option>2 Tahun</option>
+                <option>3 Tahun</option>
+            </select>
+        </div>
+    </div>
+<div class="segment">
+    <h2>Contoh Website :</h2>
+    <ul>
+        <li><a href="https://luthfifabrotec.vercel.app/">Koperasi & UMKM</a></li>
+        <li><a href="https://ayobelajar-ten.vercel.app/">Belajar Digital</a></li>
+        <li><a href="#">Sekolah</a></li>
+        <li><a href="#">Perusahaan</a></li>
+
+    </ul>
+</div>
+</div>
+
+<!-- NEW: Garansi -->
+<div class="guarantee">
+    <h2>Garansi & Maintenance</h2>
+    <ul>
+        <li>Garansi maintenance bug minor selama 3 bulan</li>
+        <li>Perbaikan error / bug fungsional ringan</li>
+        <li>Update kecil tanpa mengubah struktur utama website</li>
+        <li>Tidak termasuk penambahan fitur baru atau redesign besar</li>
+        <li>Support melalui WhatsApp selama masa garansi</li>
+    </ul>
+</div>
+
+<!-- Segmentasi -->
+<div class="segment">
+    <h2>Digunakan Untuk</h2>
+    <ul>
+        <li>Website Bisnis & Usaha</li>
+        <li>Koperasi & UMKM</li>
+        <li>Sekolah (SD, SMP, SMA, SMK)</li>
+        <li>Pesantren & Yayasan Pendidikan</li>
+        <li>Instansi Pemerintah & Desa</li>
+        <li>Organisasi & Komunitas</li>
+    </ul>
+</div>
+<div class="requirements">
+    <h2>Persyaratan Domain .sch.id</h2>
+    <ul>
+        <li>KTP Republik Indonesia</li>
+        <li>Surat Keterangan / Surat Permohonan Kepala Sekolah atau Pimpinan Lembaga (resmi)</li>
+        <li>SK Pendirian Lembaga dari Kementerian atau SKPD terkait (pendidikan non-formal)</li>
+    </ul>
+</div>
+</div>
+
+</body>
+</html>

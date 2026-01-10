@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Barang</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 700px; /* atur di sini jika ingin lebih kecil */
+            margin: 30px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #f5f5f5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #111;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 6px 8px;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #222;
+            text-align: center;
+        }
+
+        td:first-child {
+            text-align: center;
+            width: 50px;
+        }
+        .wa-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(37,211,102,0.5);
+      z-index: 2000;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: waPulse 2s infinite;
+    }
+
+    .wa-float svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.15);
+      box-shadow: 0 15px 40px rgba(37,211,102,0.8);
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Daftar ATK</h2>
+<table>
+    <tr>
+        <th>No</th>
+        <th>Nama Barang</th>
+    </tr>
+    <tr><td>1</td><td>Buku Agenda Kerja</td></tr>
+    <tr><td>2</td><td>Kertas HVS 1 oke 75 gms A4</td></tr>
+    <tr><td>3</td><td>Kertas HVS 1 oke 75 gms F4</td></tr>
+    <tr><td>4</td><td>Map kertas biasa</td></tr>
+    <tr><td>5</td><td>Map Bisnis Snail</td></tr>
+    <tr><td>6</td><td>Tip ex kertas GM 300 x 5 mm</td></tr>
+    <tr><td>7</td><td>Buku besar folio KIKY</td></tr>
+    <tr><td>8</td><td>Buku kecil ppl A6 100</td></tr>
+    <tr><td>9</td><td>Tinta Printer Merk Epson</td></tr>
+    <tr><td>10</td><td>Tinta Printer Brother 4 warna</td></tr>
+    <tr><td>11</td><td>Penggaris stainless uk 30 cm</td></tr>
+    <tr><td>12</td><td>Plastik buah/kertas 1,5 KG</td></tr>
+    <tr><td>13</td><td>Staples Deli No. 10 (kecil)</td></tr>
+    <tr><td>14</td><td>Staples Joyko HD-50 besar</td></tr>
+    <tr><td>15</td><td>Pembolong Kertas kenko</td></tr>
+    <tr><td>16</td><td>Stamp pad Ink Pyramid violet</td></tr>
+    <tr><td>17</td><td>Binder clip SQ 105 (kecil)</td></tr>
+    <tr><td>18</td><td>Binder clip SQ 155 (sedang)</td></tr>
+    <tr><td>19</td><td>Binder clip deli (besar)</td></tr>
+    <tr><td>20</td><td>Pen Joyko BP 327 hitam</td></tr>
+    <tr><td>21</td><td>Amplop grandia P 104</td></tr>
+    <tr><td>22</td><td>Amplop grandia PPL 90 PPS</td></tr>
+    <tr><td>23</td><td>Amplop coklat air mail tali (besar)</td></tr>
+    <tr><td>24</td><td>Lakban hitam startape 45 mm</td></tr>
+    <tr><td>25</td><td>Isi staples deli 0012 N (besar)</td></tr>
+    <tr><td>26</td><td>Isi staples deli 1001 (kecil)</td></tr>
+    <tr><td>27</td><td>Glue stick A 200 10 BG</td></tr>
+    <tr><td>28</td><td>Cutter Kenko L 500 (sedang)</td></tr>
+    <tr><td>29</td><td>Cutter Delli D 101 50 kecil</td></tr>
+    <tr><td>30</td><td>Gunting Delli 6010 classic</td></tr>
+    <tr><td>31</td><td>Pen Joyko JK - 100 NT Hitam</td></tr>
+    <tr><td>32</td><td>Pen Joyko BP 249 Lino</td></tr>
+    <tr><td>33</td><td>Pen Deli 6600 ES hitam</td></tr>
+    <tr><td>34</td><td>Pen Deli A 119 blue</td></tr>
+    <tr><td>35</td><td>Pen Deli A 119 black</td></tr>
+    <tr><td>36</td><td>Pen Lambor silver isi hitam</td></tr>
+    <tr><td>37</td><td>Pen Wisdom</td></tr>
+    <tr><td>38</td><td>Pen Deli bussines gen pel</td></tr>
+    <tr><td>39</td><td>Pen silver A4 kemasan mika</td></tr>
+    <tr><td>40</td><td>Goby (tempat arsip surat)</td></tr>
+    <tr><td>41</td><td>Box container arsip 30 liter</td></tr>
+    <tr><td>42</td><td>Materai tempel</td></tr>
+    <tr><td>43</td><td>Tip ex Deli 2825 ON merah</td></tr>
+    <tr><td>44</td><td>Lem cair Joyko GL - R 35 ml</td></tr>
+    <tr><td>45</td><td>Flash disk (USB) SanDisk 64 GB</td></tr>
+</table>
+
+<h2>Daftar Barang Lainnya</h2>
+<table>
+    <tr>
+        <th>No</th>
+        <th>Jenis Barang</th>
+    </tr>
+    <tr><td>1</td><td>Sepatu Limas</td></tr>
+    <tr><td>2</td><td>Seragam senam plus sablon</td></tr>
+    <tr><td>3</td><td>Bendera merah putih</td></tr>
+    <tr><td>4</td><td>Umbul-umbul</td></tr>
+    <tr><td>5</td><td>Umbul-umbul</td></tr>
+    <tr><td>6</td><td>Running text masjid</td></tr>
+    <tr><td>7</td><td>Bingkai Asta cita</td></tr>
+    <tr><td>8</td><td>Kalender 2025</td></tr>
+    <tr><td>9</td><td>Seragam BHP/BPD plus sablon</td></tr>
+    <tr><td>10</td><td>Seragam kerja batik</td></tr>
+</table>
+
+</div>
+  <a href="https://wa.me/62895623637700"
+     class="wa-float"
+     target="_blank"
+     aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path fill="currentColor" d="M16.04 2.003c-7.732 0-14.037 6.305-14.037 14.037 0 2.48.648 4.903 1.88 7.046L2 30l7.17-1.88c2.084 1.136 4.432 1.733 6.87 1.733 7.732 0 14.037-6.305 14.037-14.037S23.772 2.003 16.04 2.003zm0 25.37c-2.157 0-4.27-.578-6.107-1.672l-.437-.26-4.255 1.117 1.134-4.15-.285-.43c-1.18-1.785-1.803-3.86-1.803-6.015 0-6.087 4.952-11.04 11.04-11.04s11.04 4.953 11.04 11.04-4.952 11.04-11.04 11.04z"/>
+    </svg>
+  </a>
+</body>
+</html>
