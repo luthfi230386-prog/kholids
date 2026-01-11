@@ -2,10 +2,12 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
   <title>Home</title>
 
   <style>
+    /* RESET */
     * {
       margin: 0;
       padding: 0;
@@ -13,54 +15,65 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background: #0f172a;
       color: #e5e7eb;
       line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
 
+    /* HEADER */
     header {
       position: fixed;
       top: 0;
       width: 100%;
       background: rgba(15, 23, 42, 0.9);
       backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       z-index: 1000;
     }
 
     nav {
+      max-width: 1200px;
+      margin: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
     }
 
-    nav h1 a {
+    nav h1 {
+      font-size: 1.2rem;
       color: #38bdf8;
-      text-decoration: none;
       animation: slideDown 1s ease;
     }
 
     nav ul {
-      display: flex;
       list-style: none;
-      gap: 1.5rem;
+      display: flex;
+      gap: 1.2rem;
     }
 
     nav ul li a {
       text-decoration: none;
       color: #e5e7eb;
       font-weight: 500;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
+      font-size: 0.95rem;
     }
 
     nav ul li a:hover {
       color: #38bdf8;
     }
 
+    /* SECTION */
     section {
       min-height: 100vh;
-      padding: 6rem 2rem 2rem;
+      padding: 6.5rem 1.5rem 2rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -68,37 +81,34 @@
       text-align: center;
     }
 
-    /* HOME */
-    #home p {
-      max-width: 600px;
-      color: #94a3b8;
-      animation: fadeInUp 1.8s ease;
-    }
-
+    /* VIDEO */
     video {
       width: 100%;
       max-width: 900px;
-      border-radius: 16px;
+      height: auto;
+      border-radius: 14px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.5);
       animation: fadeIn 1.5s ease;
     }
 
+    /* FOOTER */
     footer {
       padding: 1rem;
       text-align: center;
       background: #020617;
       color: #94a3b8;
+      font-size: 0.85rem;
     }
 
     /* WHATSAPP FLOAT */
     .wa-float {
       position: fixed;
-      bottom: 25px;
-      right: 25px;
-      width: 60px;
-      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      width: 56px;
+      height: 56px;
       background: #25D366;
-      color: white;
+      color: #fff;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -110,12 +120,12 @@
     }
 
     .wa-float svg {
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
     }
 
     .wa-float:hover {
-      transform: scale(1.15);
+      transform: scale(1.12);
       box-shadow: 0 15px 40px rgba(37,211,102,0.8);
     }
 
@@ -125,20 +135,46 @@
       to { opacity: 1; }
     }
 
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     @keyframes slideDown {
-      from { opacity: 0; transform: translateY(-20px); }
+      from { opacity: 0; transform: translateY(-15px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes waPulse {
       0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
-      70% { box-shadow: 0 0 0 20px rgba(37,211,102,0); }
+      70% { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
       100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav ul {
+        gap: 0.8rem;
+      }
+
+      nav h1 {
+        font-size: 1rem;
+      }
+
+      video {
+        border-radius: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      section {
+        padding-top: 7.5rem;
+      }
     }
   </style>
 </head>
@@ -147,36 +183,43 @@
 
   <header>
     <nav>
-      <h1>
-       Khalid S
-          </h1>
+      <h1>Khalid S</h1>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="atk.html">ATK & Lainnya</a></li>
-        <li><a href="">Website</a></li>
+        <li><a href="#">Website</a></li>
       </ul>
     </nav>
   </header>
 
   <section id="home">
-    <video autoplay muted loop controls playsinline>
-  <source src="video.mp4" type="video/mp4" />
-</video>
-
-  
+    <video
+      autoplay
+      muted
+      loop
+      controls
+      playsinline
+      preload="metadata"
+    >
+      <source src="video.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video.
+    </video>
   </section>
 
   <footer>
-    <p>© 2026 Khalid S | All rights reserved.</p>
+    © 2026 Khalid S | All rights reserved.
   </footer>
 
-  <!-- WHATSAPP FLOAT BUTTON -->
-  <a href="https://wa.me/62895623637700"
-     class="wa-float"
-     target="_blank"
-     aria-label="Chat WhatsApp">
+  <!-- WHATSAPP FLOAT -->
+  <a
+    href="https://wa.me/62895623637700"
+    class="wa-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat WhatsApp"
+  >
     <svg viewBox="0 0 32 32">
-      <path fill="currentColor" d="M16.04 2.003c-7.732 0-14.037 6.305-14.037 14.037 0 2.48.648 4.903 1.88 7.046L2 30l7.17-1.88c2.084 1.136 4.432 1.733 6.87 1.733 7.732 0 14.037-6.305 14.037-14.037S23.772 2.003 16.04 2.003zm0 25.37c-2.157 0-4.27-.578-6.107-1.672l-.437-.26-4.255 1.117 1.134-4.15-.285-.43c-1.18-1.785-1.803-3.86-1.803-6.015 0-6.087 4.952-11.04 11.04-11.04s11.04 4.953 11.04 11.04-4.952 11.04-11.04 11.04z"/>
+      <path fill="currentColor" d="M16.04 2.003c-7.732 0-14.037 6.305-14.037 14.037 0 2.48.648 4.903 1.88 7.046L2 30l7.17-1.88c2.084 1.136 4.432 1.733 6.87 1.733 7.732 0 14.037-6.305 14.037-14.037S23.772 2.003 16.04 2.003z"/>
     </svg>
   </a>
 
